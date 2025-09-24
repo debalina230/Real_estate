@@ -33,6 +33,10 @@ li{
     margin: 0 auto;
     padding: 0 15px;
 }
+.title2{
+font-size: 45px;
+text-align: center;
+}
 
 /* navbar */
 .navbar{
@@ -54,7 +58,7 @@ li{
  color: white !important;
 }
 .nav_list a:hover{
-    color: var(--blue) !important;
+  color: skyblue !important;
 }
 .active{
     position: relative;
@@ -114,8 +118,6 @@ li{
 
  /* viewed */
  .view h2{
-font-size: 45px;
-font-weight: semibold;
 padding-top: 80px;
  }
  .view p{
@@ -194,10 +196,6 @@ padding-top: 80px;
     padding-bottom: 50px;
  }
 
- .work h2{
-    font-size: 45px;
-    font-weight: semibold;  
- }
  .work_para{
     max-width: 612px;
     width: 100%;
@@ -230,9 +228,6 @@ padding-top: 80px;
  /* agent */
  .agent{
     padding-top: 100px;
- }
- .agent h2{
-    font-size: 45px;
  }
  .agent_para{
     max-width: 500px;
@@ -282,10 +277,6 @@ padding-top: 80px;
  }
 
  /* clients */
- .clients h2{
-   font-size: 45px; 
-   text-align: center;
- }
  .client_para{
    max-width:487px;
    width: 100%;
@@ -325,10 +316,6 @@ padding-top: 80px;
     .blog{
       padding-top: 50px;
       padding-bottom: 50px;
-    }
-    .blog h2{
-      font-size: 45px;
-      text-align: center;
     }
     .blog_para{
       font-size: 20px;
@@ -377,6 +364,9 @@ padding-top: 80px;
     .footer a{
       color: white;
     }
+    .footer a:hover{
+      color: skyblue !important;
+    }
     .fot_para{
       font-size: 32px;
     }
@@ -410,9 +400,6 @@ padding-top: 80px;
       padding: 8px 10px;
       border-radius: 50px;
     }
-    .fot_icon:hover{
-      color: skyblue;
-    }
     .fot_para2{
       font-size: 22px;
       font-weight: bold;
@@ -422,32 +409,29 @@ padding-top: 80px;
       padding-top:15px ;
       color: white;
     }
-    .fot_list li a:hover{
-      color: skyblue;
-    }
    
    .last_part a{
     margin-left:15px ;
    }
-    
-@media screen and (max-width:1199px){
- .nav_list li{
-    padding:0 25px;
- } 
+@media screen and (max-width:1399px) {
  .btn-view2{
     margin-left: 0;
  } 
  .btn-view,.btn-view2{
     padding: 14px 25px;
- }  
-}
-
+ }
+  .add{
+    font-size: 12px;
+  }  
+}  
+@media screen and (max-width:1199px){
+ .nav_list li{
+    padding:0 25px;
+ } 
+} 
 @media screen and (max-width:991px) {
     .offcanvas {
     flex-direction: column !important;
-  }
-  .add{
-    font-size: 12px;
   }
   .view_card{
     margin-top: 20px;
@@ -491,6 +475,9 @@ padding-top: 80px;
   .house h2{
   text-align: center;
   font-size: 40px;
+ }
+ .arrow{
+  display: none;
  }
  
 }
