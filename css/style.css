@@ -40,7 +40,6 @@ text-align: center;
 
 /* navbar */
 .navbar{
-    /* background-color: red; */
     position: absolute;
     top: 0;
     left: 0;
@@ -57,10 +56,13 @@ text-align: center;
 .nav_list a{
  color: white !important;
 }
-.nav_list a:hover{
+.nav-item a:hover{
   color: skyblue !important;
+  border-bottom: 1px solid white !important;
+  padding-bottom: 1px;
 }
-.active{
+.nav_list .active{
+  color: skyblue !important;
     position: relative;
 }
 .active::before{
@@ -134,6 +136,7 @@ padding-top: 80px;
     background-color: white;
     padding: 5px 0;
     border-radius: 15px;
+    min-height: 520px;
  }
 
  .view_head{
@@ -147,15 +150,25 @@ padding-top: 80px;
     color: var(--blue);
     font-size: 25px;
  }
+
+ /* .book_bt{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+ } */
  .btn-view{
     padding: 14px 58px;
+    min-width: 40%;
  }
  .btn-view2{
     padding: 14px 58px;
     border-radius: 8px;
     border: 2px solid var(--blue);
     color: black;
-    margin-left: 10px;
+    text-align: center;
+    min-width: 40%;
+    /* margin-left: 10px; */
  }
  .btn-view2:hover{
     background-color: var(--blue);
@@ -170,7 +183,9 @@ padding-top: 80px;
     padding-top: 74px;
     padding-bottom: 74px;
  }
- .find img{
+ .find_img img{
+  max-width: 696px;
+  width: 100%;
     border-radius: 15px;
  }
  .find h3{
@@ -267,13 +282,9 @@ padding-top: 80px;
  }
   .house p{
    max-width: 480px;
-   width: 100%;
    font-size: 20px;
    color: var(--lightgray);
     margin-left: 50px;
- }
- .house_img{
-   border-radius: 15px;
  }
 
  /* clients */
@@ -403,22 +414,30 @@ padding-top: 80px;
     .fot_para2{
       font-size: 22px;
       font-weight: bold;
+
     }
     .fot_list li{
       font-size: 18px;
       padding-top:15px ;
       color: white;
     }
+    .fot_img img{
+      max-width: 96px;
+      width: 100%;
+    }
+    .mail_img{
+      max-width: 35px;
+    }
    
-   .last_part a{
-    margin-left:15px ;
+   .social_icon a{
+    margin-left:15px;
    }
 @media screen and (max-width:1399px) {
  .btn-view2{
     margin-left: 0;
  } 
  .btn-view,.btn-view2{
-    padding: 14px 25px;
+    padding: 14px 40px;
  }
   .add{
     font-size: 12px;
@@ -428,6 +447,9 @@ padding-top: 80px;
  .nav_list li{
     padding:0 25px;
  } 
+ .btn-view,.btn-view2{
+    padding: 14px 26px;
+ }
 } 
 @media screen and (max-width:991px) {
     .offcanvas {
@@ -448,12 +470,13 @@ padding-top: 80px;
   .work_head{
     font-size: 20px;
   }
-  .house p{
+  /* .house p{
    margin-left: 30px;
-  }
+  } */
   .client_para2{
    font-size: 12px;
   }
+ 
    .fot1{
       margin: 0 auto;
       text-align: center;
@@ -462,6 +485,19 @@ padding-top: 80px;
     .street{
       display: flex;
       justify-content: center;
+    }
+    .find p,h3{
+      margin: 0 auto;
+      text-align: center;
+    }
+     .house,h2{
+      margin: 0 auto;
+      text-align: center;
+    }
+    .house_row{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
     }
 }
 @media screen and (max-width:767px) {
@@ -479,6 +515,10 @@ padding-top: 80px;
  .arrow{
   display: none;
  }
+
+ .fot_para2{
+  margin-left: 0 !important;
+ }
  
 }
 @media screen and (max-width:489px) {
@@ -488,5 +528,6 @@ padding-top: 80px;
  .last_part a{
     margin-left:5px ;
    }
+ 
 }
 
